@@ -1,0 +1,43 @@
+insert into feedback2 (username,email,course,feedback) values ("Juliet","Juliet@gmail.com","C++","I must say it exceeded all my expectations. As someone relatively new to programming, I found this course to be exceptionally well-designed.");
+insert into feedback2 (username,email,course,feedback) values ("Sofia","Sofia@gmail.com","C++","The course is impeccably organized, starting from the basics and gradually progressing to more advanced topics.");
+insert into feedback2 (username,email,course,feedback) values ("Thomas","Thomas@gmail.com","C++","The instructor and her team are incredibly responsive to questions posted in the Q&A section.");
+
+
+insert into feedback2 (username,email,course,feedback) values ("AmySan","Amysan@gmail.com","FWT","The instructor's clear explanations and insightful examples made even the most complex topics easy to understand.");
+insert into feedback2 (username,email,course,feedback) values ("JulyMoe","july123@gmail.com","FWT","The hands-on exercises provided ample opportunity to apply theoretical knowledge and strengthen practical skills.");
+insert into feedback2 (username,email,course,feedback) values ("SoePyaw","SoePyae@gmail.com","FWT","The course's emphasis on real-world applications gave me confidence in tackling programming challenges outside the classroom.");
+
+
+insert into feedback2 (username,email,course,feedback) values ("Amelia","Amelia@gmail.com","Database","The practical exercises and real-world examples offered invaluable hands-on experience, enabling me to apply database concepts in various scenarios.");
+insert into feedback2 (username,email,course,feedback) values ("Charlotte","charlotte123@gmail.com","Database","The hands-on exercises provided ample opportunity to apply theoretical knowledge and strengthen practical skills.");
+insert into feedback2 (username,email,course,feedback) values ("Eloise","Eloise234@gmail.com","Database","The knowledge gained from this course, I feel equipped to design and manage databases effectively, and I am excited to apply these skills in my future projects.");
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+insert into feedback2 (username,email,course,feedback) values ("Gregory","greg_123@gmail.com","Korean","The course content is diverse and engaging, covering various aspects of Korean language and culture.");
+insert into feedback2 (username,email,course,feedback) values ("Giselle","gigi@email.com","Korean","I appreciated the interactive quizzes and exercises, which helped reinforce my understanding of the material.");
+insert into feedback2 (username,email,course,feedback) values ("Gavin","gavin321@hotmail.com","Korean","The instructor's passion for teaching Korean language shines through in every lesson, making learning enjoyable.");
+
+insert into feedback2 (username,email,course,feedback) values ("Daisy","Daisyflower@gmail.com","Japanese","I was pleasantly surprised by the depth and breadth of the course material, which covered a wide range of topics.");
+insert into feedback2 (username,email,course,feedback) values ("Isabella","Isa3421@gmail.com","Japanese","The instructors' expertise and passion for teaching Korean were evident in every aspect of the course.");
+insert into feedback2 (username,email,course,feedback) values ("Harper","Harper432s@gmail.com","Japanese","The course's emphasis on real-world applications gave me confidence in tackling programming challenges outside the classroom.");
+insert into feedback2 (username,email,course,feedback) values ("Gabriella","gabs90@gmail.com","Japanese","The course community forum provided a supportive environment for sharing learning experiences and tips.");
+insert into feedback2 (username,email,course,feedback) values ("Gideon","gideon_korean@gmail.com","Japanese","The course materials are well-structured, with clear explanations and practical examples.");
+
+insert into feedback2 (username,email,course,feedback) values ("Abigail","Abigail@gmail.com","Chinese","From grammar explanations to vocabulary drills, each lesson was meticulously crafted to facilitate effective learning.");
+insert into feedback2 (username,email,course,feedback) values ("Alexa","alesofia123@gmail.com","Chinese","I particularly appreciated the cultural insights woven seamlessly into the curriculum, providing a holistic understanding of the Korean language and its context.");
+insert into feedback2 (username,email,course,feedback) values ("Allegra","office122@gmail.com","Chinese","The course structure allowed for a gradual progression, ensuring a solid foundation before delving into more advanced concepts.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+

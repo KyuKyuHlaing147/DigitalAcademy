@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+ <package name="action" namespace="/"  extends="struts-default">
+  
+  <action name="showschedule" method="execute" class="action.showschedule">
+  		<result name="success">/view/liveteaching.jsp</result> 		
+  </action>
+  
+  <action name="updateprogress" method="execute" class="action.updateprogress">
+  		<result name="success">/view/profile.jsp</result> 		
+  </action>
+  
+	<action name="SignUp" method="execute" class="action.SignUp">
+		<result name="input">/view/SignUp.jsp</result>
+  		<result name="success">/view/headersignin.jsp</result> 	
+  			
+  </action>
+  
+  <action name="showprofile" method="execute" class="action.showprofile">
+  		<result name="success">/view/profile.jsp</result> 	
+  			
+  </action>
+  
+  
+  
+ 
+   
+
+ <action name="adminlogin" method="execute" class="action.adminlogin">
+  		<result name="success">/view/Adminhome.jsp</result>
+  		<result name="error">/view/headersignin.jsp</result>
+  		<result name="userSuccess">/view/index2.jsp</result>
+  </action>
+
+ <action name="Addnewschedule" method="execute" class="action.Addnewschedule">
+  		<result name="success">/view/AddSchedule.jsp</result> 	
+  		<result name="input">/view/AddSchedule.jsp</result>	
+  </action>
+  
+   <action name="Addnewcontent" method="execute" class="action.Addnewcontent">
+  		<result name="success">/view/AddContent.jsp</result> 
+  		<result name="input">/view/AddContent.jsp</result>		
+  </action>
+  
+   <action name="ShowContentAction" method="execute" class="action.ShowContentAction">
+  		<result name="success">/view/ViewSelectedContent.jsp</result> 		
+  </action>
+  
+  <action name="ShowQuizAction" method="execute" class="action.ShowQuizAction">
+  		<result name="success">/view/ViewSelectedQuiz.jsp</result> 		
+  </action>
+  
+  <action name="updatequiz" method="execute" class="action.updatequiz">
+  		<result name="success">/view/ViewSelectedQuiz.jsp</result>
+  		<result name="input">/view/showquizform.jsp</result> 		
+  </action>
+  
+  <action name="deletequiz" method="execute" class="action.deletequiz">
+  		<result name="success">/view/ViewSelectedQuiz.jsp</result> 		
+  </action>
+  
+  <action name="searchcontent" method="execute" class="action.searchaction">
+  		<result name="success">/view/ViewSearchContent.jsp</result> 		
+  </action>
+  
+  <action name="searchschedule" method="execute" class="action.searchschedule">
+  		<result name="success">/view/ViewSearchSchedule.jsp</result> 		
+  </action>
+  
+  <action name="ViewFeedback" method="execute" class="action.ViewFeedback">
+  		<result name="success">/view/ViewFeedback.jsp</result> 		
+  </action>
+  
+  <action name="searchquiz" method="execute" class="action.searchquiz">
+  		<result name="success">/view/ViewSearchQuiz.jsp</result> 		
+  </action>
+  
+  <action name="adminviewschedule" method="execute" class="action.adminviewschedule">
+  		<result name="success">/view/adminviewschedule.jsp</result> 		
+  </action>
+  
+<action name="JapanAction" class="action.JapanAction" method="execute">
+            
+            <result name="success">/view/Japanhome2.jsp</result>
+            <result name="error">/view/signin.jsp</result>
+        </action>
+        
+        
+ <action name="JapanaSingin" class="action.JapanaSingin" method="execute">
+            
+            <result name="userSuccess">/view/Japanhome2.jsp</result>
+            <result name="error">/view/signin.jsp</result>
+        </action>
+        
+          <action name="LogoutAction" method="execute" class="action.LogoutAction">
+    <result name="success" type="redirect">/view/index.jsp</result>
+</action>
+
+<action name="LogoutAction2" method="execute" class="action.LogoutAction2">
+    <result name="success" type="redirect">/view/index.jsp</result>
+</action>
+
+
+ <action name="JapanN1" method="execute" class="action.JapanN1">
+    <result name="success">/view/JapanN1.jsp</result>
+</action>
+
+<action name="JapanN2" method="execute" class="action.JapanN2">
+    <result name="success">/view/JapanN1.jsp</result>
+    <result name="error">/view/Japanhome2.jsp</result>
+</action>
+
+<action name="JapanN3" method="execute" class="action.JapanN3">
+     <result name="success">/view/JapanN1.jsp</result>
+    <result name="error">/view/Japanhome2.jsp</result>
+</action>
+
+<action name="JapanN4" method="execute" class="action.JapanN4">
+     <result name="success">/view/JapanN1.jsp</result>
+    <result name="error">/view/Japanhome2.jsp</result>
+</action>
+
+<action name="JapanN5" method="execute" class="action.JapanN5">
+    <result name="success">/view/JapanN1.jsp</result>
+    <result name="error">/view/Japanhome2.jsp</result>
+</action>
+
+<action name="updatecontent" method="execute" class="action.updatecontent">
+    <result name="success">/view/ViewSelectedContent.jsp</result>
+    <result name="input">/view/showupdateform.jsp</result>
+</action>
+
+<action name="updateschedule" method="execute" class="action.updateschedule">
+    <result name="success">/view/adminviewschedule.jsp</result>
+    <result name="input">/view/scheduleupdateform.jsp</result>
+</action>
+
+<action name="deleteschedule" method="execute" class="action.deleteschedule">
+    <result name="success">/view/adminviewschedule.jsp</result>
+</action>
+
+<action name="deletecontent" method="execute" class="action.deletecontent">
+    <result name="success">/view/ViewSelectedContent.jsp</result>
+</action>
+
+
+<!-- This is korea action for struts2 -->
+<action name="KoreaAction" class="action.KoreaAction" method="execute">
+            
+            <result name="success">/view/KoreaHome2.jsp</result>
+            <result name="error">/view/signin1.jsp</result>
+        </action>
+        
+ <action name="KoreaSignin" class="action.KoreaSignin" method="execute">
+            
+            <result name="userSuccess">/view/KoreaHome2.jsp</result>
+            <result name="error">/view/signin1.jsp</result>
+        </action>
+        
+          <action name="LogoutAction" method="execute" class="action.LogoutAction">
+    <result name="success" type="redirect">/view/index.jsp</result>
+</action>
+
+ <action name="KoreaL1" method="execute" class="action.KoreaL1">
+    <result name="success">/view/KoreaL1.jsp</result>
+</action>
+
+<action name="KoreaL2" method="execute" class="action.KoreaL2">
+
+    <result name="success">/view/KoreaL1.jsp</result>
+    <result name="error">/view/KoreaHome2.jsp</result>
+</action>
+<action name="KoreaL3" method="execute" class="action.KoreaL3">
+   <result name="success">/view/KoreaL1.jsp</result>
+    <result name="error">/view/KoreaHome2.jsp</result>
+</action>
+<action name="KoreaL4" method="execute" class="action.KoreaL4">
+    <result name="success">/view/KoreaL1.jsp</result>
+    <result name="error">/view/KoreaHome2.jsp</result>
+</action>
+<action name="KoreaL5" method="execute" class="action.KoreaL5">
+    <result name="success">/view/KoreaL1.jsp</result>
+    <result name="error">/view/KoreaHome2.jsp</result>
+</action>
+
+<!-- This is chinese action for struts2 -->
+
+<action name="chineseSignin" class="action.chineseSignin" method="execute">
+            
+            <result name="userSuccess">/view/chinesehome2.jsp</result>
+            <result name="error">/view/signin2.jsp</result>
+        </action>
+
+<action name="ChineseAction" class="action.ChineseAction" method="execute">
+            
+            <result name="success">/view/chinesehome2.jsp</result>
+            <result name="error">/view/signin2.jsp</result>
+        </action>
+<action name="Chinese1" method="execute" class="action.Chinese1">
+    <result name="success">/view/chinese1.jsp</result>
+</action>
+
+<action name="Chinese2" method="execute" class="action.Chinese2">
+     <result name="success">/view/chinese1.jsp</result>
+     <result name="error">/view/chinesehome2.jsp</result>
+</action>
+<action name="Chinese3" method="execute" class="action.Chinese3">
+     <result name="success">/view/chinese1.jsp</result>
+     <result name="error">/view/chinesehome2.jsp</result>
+</action>
+<action name="Chinese4" method="execute" class="action.Chinese4">
+     <result name="success">/view/chinese1.jsp</result>
+     <result name="error">/view/chinesehome2.jsp</result>
+</action>
+<action name="Chinese5" method="execute" class="action.Chinese5">
+     <result name="success">/view/chinese1.jsp</result>
+     <result name="error">/view/chinesehome2.jsp</result>
+</action>
+<action name="Chinese6" method="execute" class="action.Chinese6">
+     <result name="success">/view/chinese1.jsp</result>
+     <result name="error">/view/chinesehome2.jsp</result>
+</action>
+
+<!-- This is FWT action for struts2 -->
+
+<action name="FWTSignin" class="action.FWTSignin" method="execute">
+            
+            <result name="userSuccess">/view/Fwthome2.jsp</result>
+            <result name="error">/view/FWTSignin.jsp</result>
+        </action>
+<action name="FWTAction" class="action.FWTAction" method="execute">
+            
+            <result name="userSuccess">/view/Fwthome2.jsp</result>
+            <result name="error">/view/FWTSignin.jsp</result>
+        </action>
+
+<action name="FWTBeginner" method="execute" class="action.FWTBeginner">
+    <result name="success">/view/FWT1.jsp</result>
+</action>
+
+<action name="FWTInter" method="execute" class="action.FWTInter">
+     <result name="success">/view/FWT1.jsp</result>
+     <result name="error">/view/Fwthome2.jsp</result>
+</action>
+<action name="FWTAdvance" method="execute" class="action.FWTAdvance">
+     <result name="success">/view/FWT1.jsp</result>
+        <result name="error">/view/Fwthome2.jsp</result>
+</action>
+
+<!-- This is Database action for struts2 -->
+<action name="DatabaseSignin" class="action.DatabaseSignin" method="execute">
+            
+            <result name="userSuccess">/view/Databasehome2.jsp</result>
+            <result name="error">/view/DatabaseSignin.jsp</result>
+        </action>
+<action name="DBTAction" class="action.DBTAction" method="execute">
+            
+            <result name="userSuccess">/view/Databashome2.jsp</result>
+            <result name="error">/view/DatabaseSignin.jsp</result>
+        </action>
+
+<action name="DBTBeginner" method="execute" class="action.DBTBeginner">
+    <result name="success">/view/Database1.jsp</result>
+</action>
+
+<action name="DBTInter" method="execute" class="action.DBTInter">
+     <result name="success">/view/Database1.jsp</result>
+     <result name="error">/view/Databasehome2.jsp</result>
+</action>
+<action name="DBTAdvance" method="execute" class="action.DBTAdvance">
+     <result name="success">/view/Database1.jsp</result>
+        <result name="error">/view/Databasehome2.jsp</result>
+</action>
+
+<!-- This is C++ action for struts2 -->
+
+<action name="CSignin" class="action.CSignin" method="execute">
+            
+            <result name="userSuccess">/view/C++home2.jsp</result>
+            <result name="error">/view/CSignin.jsp</result>
+        </action>
+<action name="CAction" class="action.CAction" method="execute">
+            
+            <result name="userSuccess">/view/C++home2.jsp</result>
+            <result name="error">/view/C++Signin.jsp</result>
+        </action>
+
+<action name="CBeginner" method="execute" class="action.CBeginner">
+    <result name="success">/view/C++1.jsp</result>
+</action>
+
+<action name="CInter" method="execute" class="action.CInter">
+     <result name="success">/view/C++1.jsp</result>
+     <result name="error">/view/C++home2.jsp</result>
+</action>
+<action name="CAdvance" method="execute" class="action.CAdvance">
+     <result name="success">/view/C++1.jsp</result>
+        <result name="error">/view/C++home2.jsp</result>
+</action>
+
+
+
+<action name="UpdateProfile" method="execute" class="action.UpdateProfile">
+		
+  		<result name="success">/view/profile2.jsp</result> 	
+  		<result name="input">/view/profileupdate.jsp</result>
+  		<result name="error">/view/profileupdate.jsp</result>	
+  </action>
+
+<action name="UserInformation" method="execute" class="action.UserInformation">
+    <result name="success">/view/showuserinfo.jsp</result>
+</action>
+
+<action name="deleteuser" method="execute" class="action.deleteuser">
+    <result name="success">/view/showuserinfo.jsp</result>
+</action>
+
+<action name="increase" method="execute" class="action.IncreaseProgress">
+    <result name="success">/view/contentshow.jsp</result>
+    <result name="usersuccess">/view/contentshow2.jsp</result>
+</action>
+
+<action name="TakeExam" method="execute" class="action.TakeExam">
+    <result name="usersuccess">/view/quizheader.jsp</result>
+     <result name="error">/view/contentshow3.jsp</result>
+     <result name="success">/view/contentshow3.jsp</result>
+</action>
+
+<action name="takequiz" method="execute" class="action.takequiz">
+    <result name="success">/view/showquiz.jsp</result>
+     <result name="error">/view/contentshow3.jsp</result>
+</action>
+
+<action name="checkquiz" method="execute" class="action.checkquiz">
+    <result name="success">/view/showquiz.jsp</result>
+     <result name="usersuccess">/view/Certificate.jsp</result>
+</action>
+
+<action name="Addnewquiz" method="execute" class="action.Addnewquiz">
+  		<result name="success">/view/AddQuiz.jsp</result> 	
+  		<result name="input">/view/AddQuiz.jsp</result>	
+  </action>
+
+<action name="searchuser" method="execute" class="action.searchuser">
+  		<result name="success">/view/ViewSearchUser.jsp</result> 		
+  </action>
+
+<action name="message" method="execute" class="action.FeedBackAction1">
+<result name="success">/view/index.jsp</result>
+</action>
+<action name="showfeedback" method="execute" class="action.showfeedback">
+<result name="success">/view/courseFB.jsp</result>
+</action>
+<action name="showfeedback2" method="execute" class="action.showfeedback2">
+<result name="success">/view/courseFB2.jsp</result>
+</action>
+
+<action name="showfeedback2" method="execute" class="action.showfeedback">
+<result name="success">/view/courseFB2.jsp</result>
+</action>
+
+
+<action name="message2" method="execute" class="action.FeedBackAction2">
+<result name="success">/view/index2.jsp</result>
+</action>
+
+<action name="deletefeedback1" method="execute" class="action.deletefeedback1">
+<result name="success">/view/ViewFeedback.jsp</result>
+</action>
+
+<action name="AdminUpdateProfile" method="execute" class="action.AdminUpdateProfile">
+<result name="success">/view/adminprofile.jsp</result>
+<result name="input">/view/AdminUpdate.jsp</result>
+</action>
+
+<action name="SaveCertificate" method="execute" class="action.SaveCertificate">
+<result name="success">/view/profile.jsp</result>
+<result name="error">/view/Certificate.jsp</result>
+</action>
+
+</package> 
+ </struts>
